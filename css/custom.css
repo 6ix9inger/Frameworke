@@ -137,6 +137,7 @@ nav ul li a:hover {
   color: #ffffff;
   font-weight: 800;
   transition: 0.5s;
+  position: relative;
   animation: fadeIn 2.5s;
 }
 
@@ -148,9 +149,10 @@ nav ul li a:hover {
   font-size: 24px;
   border: 2px solid #fff;
   padding: 0 120px;
+  position: relative;
   border-radius: 5px;
   margin-top: 20px;
-  animation: fadeIn 2.5s;
+  animation: fadeIn 3.5s;
 }
 
 /* Top Content Subpage 2
@@ -166,25 +168,16 @@ nav ul li a:hover {
   font-weight: 800;
   transition: 0.5s;
   margin-top: 5em;
-  animation: fadeIn 1s;
-  animation: moveUp 1s;
+  animation: fadeIn 3.5s;
 }
 
 @keyframes fadeIn {
   0% {
+    top: 200px;
     opacity: 0;
   }
   100% {
-    opacity: 1;
-  }
-}
-
-@keyframes moveUp {
-  from {
-    transform: translateY(80px);
-  }
-  to {
-    transform: translateY(0px);
+    top: 0px;
   }
 }
 
@@ -432,6 +425,9 @@ input {
   }
   .section-heading {
     padding-top: 100px;
+  }
+  .section-description {
+    text-align: justify;
   }
   .responsive {
     padding-top: 000px;
