@@ -409,9 +409,35 @@ input {
 }
 
 /* Bigger than 550 */
-@media (min-width: 550px) {
+@media (max-width: 500px) {
   .value-description-two-thirds {
     padding-bottom: 200px;
+  }
+  .hero {
+    padding-top: 100px;
+    align-self: center;
+    width: 100%;
+  }
+  .value-description-two-thirds {
+    padding-left: 0px;
+    text-align: justify;
+    font-size: 16px;
+  }
+  .value-description {
+    font-size: 16px;
+  }
+  .value-heading-two-thirds {
+    padding-top: 100px;
+    padding-left: 0px;
+  }
+  .section-heading {
+    padding-top: 100px;
+  }
+  .responsive {
+    padding-top: 000px;
+  }
+  .content h1 {
+    font-size: 100px;
   }
 }
 
