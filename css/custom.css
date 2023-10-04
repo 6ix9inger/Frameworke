@@ -2,7 +2,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @font-face {
   font-family: "Symbolfont";
-  src: url("../assets/Symbolfont.otf") format("opentype");
+  src: url("../assets/symbolfont.ttf") format("opentype");
 }
 
 @font-face {
@@ -267,6 +267,9 @@ nav ul li a:hover {
 
 /* Footer
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.icon-row h1 {
+  font-family: "symbolfont";
+}
 .footer-content {
   color: #ffffff;
   text-align: center;
