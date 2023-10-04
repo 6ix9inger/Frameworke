@@ -112,6 +112,10 @@ nav ul li a:hover {
   color: #ffffff;
 }
 
+.home-icon {
+  font-family: "Symbolfont";
+}
+
 .nav-sample-page {
   background-color: #080808;
   padding: 20px 8%;
@@ -268,7 +272,7 @@ nav ul li a:hover {
 /* Footer
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .icon-row h1 {
-  font-family: "symbolfont";
+  font-family: "Symbolfont";
 }
 .footer-content {
   color: #ffffff;
@@ -278,7 +282,6 @@ nav ul li a:hover {
 .footer-content h1 {
   font-weight: 800;
   font-size: 60px;
-  font-family: "Poppins-Bold";
 }
 
 .footer-content p {
