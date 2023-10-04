@@ -46,6 +46,39 @@
       </ul>
     </nav>
 
-    <div class="container"></div>
+    <div class="container">
+      <h1>Funny Dad Joke Generator</h1>
+      <p>Click the button below to generate a random dad joke:</p>
+      <div id="joke-container">
+        <p id="joke"></p>
+      </div>
+      <button id="generate-joke" class="button-primary">Generate Joke</button>
+    </div>
+
+    <script>
+      // Define an array of dad jokes
+      const dadJokes = [
+        "Why did the scarecrow win an award? Because he was outstanding in his field!",
+        "What do you call a fish with no eyes? Fsh!",
+        "I used to play piano by ear, but now I use my hands.",
+        "I couldn't figure out how to put my seatbelt on. Then it just " +
+          "clicked.",
+        "I'm reading a book on anti-gravity. It's impossible to put down!",
+      ];
+
+      // Function to generate a random dad joke
+      function generateRandomJoke() {
+        const jokeContainer = document.getElementById("joke");
+        const randomIndex = Math.floor(Math.random() * dadJokes.length);
+        jokeContainer.textContent = dadJokes[randomIndex];
+      }
+
+      // Attach the event listener to the button
+      const generateButton = document.getElementById("generate-joke");
+      generateButton.addEventListener("click", generateRandomJoke);
+
+      // Generate an initial joke
+      generateRandomJoke();
+    </script>
   </body>
 </html>
