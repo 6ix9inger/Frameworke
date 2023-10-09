@@ -51,13 +51,31 @@
     <br />
 
     <div class="container">
+      <h1>AI Generated Image</h1>
+      <p>
+        Image generated with
+        <a href="https://openai.com/dall-e-2">Dall-E AI</a> and expanded with
+        generative fill in Adobe Photoshop Beta 2023.
+      </p>
+      <img
+        src="../img/AI_image_banner.png"
+        alt="AI Generated Porsche"
+        width="100%"
+      />
+    </div>
+
+    <!--Dad Joke-->
+
+    <div class="container">
       <h1>Funny Dad Joke Generator</h1>
+      <button id="generate-joke" class="button-primary">Generate Joke</button>
       <p>Click the button below to generate a random dad joke:</p>
       <div id="joke-container">
         <p id="joke"></p>
       </div>
-      <button id="generate-joke" class="button-primary">Generate Joke</button>
     </div>
+
+    <!--Dad Joke Script-->
 
     <script>
       // Define an array of dad jokes
@@ -84,9 +102,5 @@
       // Generate an initial joke
       generateRandomJoke();
     </script>
-    <div class="container">
-      <h1>AI Generated Image:</h1>
-      <img src="../img/AI_image.png" alt="AI Generated Porsche" width="400px" />
-    </div>
   </body>
 </html>

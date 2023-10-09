@@ -59,29 +59,8 @@
   color: #d5d5d5;
 }
 
-h1 {
-  font-weight: 800;
-}
-
 h2 {
-  font-weight: 700;
   font-family: "Poppins-Bold";
-}
-
-h3 {
-  font-weight: 600;
-}
-
-h4 {
-  font-weight: 500;
-}
-
-h5 {
-  font-weight: 400;
-}
-
-h6 {
-  font-weight: 400;
 }
 
 /* Nav Bar
@@ -136,11 +115,21 @@ nav ul li a:hover {
 .content {
   text-align: center;
 }
+
+@keyframes fadeIn {
+  0% {
+    top: 200px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
 .content h1 {
-  font-size: 120px;
+  font-size: 12rem;
   font-family: "Historia", sans-serif;
   color: #ffffff;
-  font-weight: 800;
   transition: 0.5s;
   position: relative;
   animation: fadeIn 2.5s;
@@ -158,6 +147,7 @@ nav ul li a:hover {
   border-radius: 5px;
   margin-top: 20px;
   animation: fadeIn 3.5s;
+  letter-spacing: -1px;
 }
 
 /* Top Content Subpage 2
@@ -170,20 +160,9 @@ nav ul li a:hover {
 .content-subpage h1 {
   font-size: 120px;
   color: #ffffff;
-  font-weight: 800;
   transition: 0.5s;
   margin-top: 5em;
   animation: fadeIn 3.5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    top: 200px;
-    opacity: 0;
-  }
-  100% {
-    top: 0px;
-  }
 }
 
 .hero-subpage {
@@ -242,35 +221,32 @@ nav ul li a:hover {
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .value-heading {
-  font-size: 60px;
+  font-size: 6rem;
   margin-bottom: 0.5rem;
-  font-weight: 500;
   color: #ffffff;
 }
 .value-description {
   opacity: 0.8;
-  font-weight: 300;
-  font-size: 20px;
+  font-size: 2rem;
   color: #ffffff;
 }
 .value-heading-two-thirds {
-  font-size: 60px;
+  font-size: 6rem;
   margin-bottom: 0.5rem;
-  font-weight: 500;
   padding-left: 50px;
   color: #ffffff;
 }
 .value-description-two-thirds {
   opacity: 0.8;
-  font-weight: 300;
   padding-left: 50px;
-  font-size: 20px;
+  font-size: 2rem;
   color: #ffffff;
 }
 
 /* Footer
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .icon-row h1 {
+  font-size: 6rem;
   font-family: "Symbolfont";
 }
 .footer-content {
@@ -278,9 +254,9 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.footer-content h1 {
-  font-weight: 800;
-  font-size: 60px;
+.section-footer h1 {
+  font-size: 6rem;
+  font-family: "Poppins-Bold";
 }
 
 .footer-content p {
@@ -291,14 +267,18 @@ nav ul li a:hover {
 }
 
 .footer-content a {
-  color: #ffffff;
+  color: #fff;
+  background-color: transparent;
   margin-top: 2rem;
   margin-bottom: 10rem;
   font-family: "Poppins-Bold";
+  transition: 0.5s;
 }
 
 .footer-content a:hover {
-  color: #ffffff;
+  color: #2b2b2b;
+  background-color: #fff;
+  margin-top: 2rem;
   margin-bottom: 10rem;
 }
 
@@ -309,13 +289,11 @@ nav ul li a:hover {
 
 .value-heading-one-third-footer {
   font-size: 20px;
-  font-weight: 400;
   margin-bottom: 0.5rem;
 }
 
 .value-description-one-third {
   opacity: 0.8;
-  font-weight: 300;
   font-size: 16px;
   color: #ffffff;
   padding-bottom: 50px;
@@ -331,14 +309,17 @@ nav ul li a:hover {
 
 .bottom-footer p {
   font-family: "Poppins-Thin";
+  font-size: 1rem;
 }
 
-.autor {
-  margin-bottom: 0.5rem;
+.bottom-footer a {
+  font-family: "Poppins-Thin";
+  font-size: 1rem;
 }
 
 .icon-row h5 {
   font-family: "Poppins-Medium";
+  font-size: 2rem;
 }
 
 .icon-row p {
@@ -362,7 +343,6 @@ nav ul li a:hover {
   background-color: #2b2b2b;
   color: #ffffff;
   text-align: left;
-  font-weight: 800;
 }
 
 .content-table th,
