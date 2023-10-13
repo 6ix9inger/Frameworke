@@ -430,7 +430,7 @@ input {
   }
 }
 
-/* Smaller than 1000 */
+/* Smaller than 1200 */
 @media (max-width: 1200px) {
   .logo {
     height: auto;
